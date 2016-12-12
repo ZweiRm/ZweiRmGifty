@@ -1,0 +1,108 @@
+body {
+    background-image: url("/src/bg.png");
+    background-size: 100%;
+}
+
+.demo{
+    padding: 2em 0;
+    background: linear-gradient(to right, #2c3b4e, #4a688a, #2c3b4e);
+}
+.progress{
+    position: relative;
+    top: 300px;
+    height: 25px;
+    background: #262626;
+    padding: 5px;
+    overflow: visible;
+    border-radius: 20px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #7992a8;
+    margin-top: 50px;
+}
+.progress .progress-bar{
+    border-radius: 20px;
+    position: relative;
+    animation: animate-positive 2s;
+}
+.progress .progress-value{
+    display: block;
+    padding: 3px 7px;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 4px;
+    background: #191919;
+    border: 1px solid #000;
+    position: absolute;
+    top: -40px;
+    right: -10px;
+}
+.progress .progress-value:after{
+    content: "";
+    border-top: 10px solid #191919;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    position: absolute;
+    bottom: -6px;
+    left: 26%;
+}
+.progress-bar.active{
+    animation: reverse progress-bar-stripes 0.50s linear infinite, animate-positive 5s;
+}
+.progress-bar-warning {
+    background-color: #f0ad4e;
+}
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
+}
+@-webkit-keyframes dispear {
+    from {
+        -webkit-transform: scale(1);
+    }to {
+        -webkit-transform: scale(0);
+         }
+}
+@keyframes dispear {
+    from {
+        transform: scale(1);
+    }to {
+        transform: scale(0);
+         }
+}
+.btn {
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    margin: 0 auto 2em;
+    max-width: 160px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    padding: 0;
+    font: inherit;
+    box-sizing: inherit;
+    text-align: center;
+}
+.btn:nth-of-type(5) {
+    margin-right: 0;
+}
+
+i, b, h1{
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 100%;
+}

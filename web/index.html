@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gift</title>
+    <script src="js/js.js"></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="css/c.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="css/wordstyle.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="progress" id="run" style="width: 98%; margin: 0 auto;">
+        <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 100%;">
+            <div class="progress-value">
+                <img src="src/down.png" width="30%">
+            </div>
+        </div>
+    </div>
+    <section class="cd-intro" id="words">
+        <h1 class="cd-headline letters type">
+            <span>This is what "</span>
+            <span class="cd-words-wrapper">
+                <b class="is-visible">gift</b>
+                <b class="is-hidden">present</b>
+                <b class="is-hidden">礼物</b>
+                <b class="is-hidden">プレゼント</b>
+                <b class="is-hidden">cadeau</b>
+                <b class="is-hidden">regalo</b>
+            </span>
+            <span>"I send to you.</span>
+        </h1>
+    </section>
+    <div style="height: 48px; width: 100px; position: absolute; top: 50%; left: 47%; margin: -24px 0 0;" id="btn">
+        <a href="https://store.steampowered.com/account/ackgift/72A6C939C12BD90E?redeemer=steamgiftsending%2B284120937194782561%40gmail.com" class="btn btn-4">Click</a>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btn").hide()
+            $("#words").hide()
+            setTimeout("$('#btn').show()", 4800)
+            setTimeout("$('#words').show()", 4800)
+        })
+    </script>
+</body>
+</html>
